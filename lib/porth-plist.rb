@@ -1,6 +1,9 @@
 require 'porth-plist/version'
+require 'action_controller'
+require 'active_record'
 require 'porth'
 require 'porth/format/plist'
+require 'plist'
 
 Porth::Handler.register_format :plist, Porth::Format::Plist
 

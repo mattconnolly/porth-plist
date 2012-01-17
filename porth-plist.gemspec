@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["matt.connolly@me.com"]
   s.homepage    = ""
   s.summary     = %q{Plain Old Ruby Template PLIST handler}
-  s.description = %q{TODO: Write a gem description}
+  s.description = %q{Plain Old Ruby Template PLIST handler}
 
   s.rubyforge_project = "porth-plist"
 
@@ -19,8 +19,13 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  s.add_runtime_dependency "porth"
-  
-  s.add_development_dependency "rspec"
-  
+  s.add_runtime_dependency 'porth'
+  s.add_runtime_dependency 'plist'
+  s.add_runtime_dependency 'actionpack', '>= 3.1.0', '< 4.0.0'
+  s.add_runtime_dependency 'activerecord', '>= 3.1.0', '< 4.0.0'
+
+
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'minitest', '~> 2.6.2'
+  s.add_development_dependency 'rake',     '~> 0.9.2'
 end
