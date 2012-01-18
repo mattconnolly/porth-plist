@@ -23,6 +23,7 @@ Mime::Type.register "text/xml", :plist
 ```
 
 Add ":plist" to your controller's responds_to calls, for example:
+
 ``` ruby
 class PeopleController < ApplicationController
 
